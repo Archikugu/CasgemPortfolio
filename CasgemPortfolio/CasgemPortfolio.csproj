@@ -373,12 +373,15 @@
     <Content Include="Templates\sidebar-01\scss\style.scss" />
     <Content Include="Views\Shared\_PortfolioAdminLayout.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
+    <Content Include="Views\Message\Index.cshtml" />
+    <Content Include="Views\Message\MessageDetails.cshtml" />
+    <Content Include="Views\Feature\Index.cshtml" />
+    <Content Include="Views\Service\Index.cshtml" />
+    <Content Include="Views\Service\AddService.cshtml" />
+    <Content Include="Views\Service\UpdateService.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Feature\" />
-    <Folder Include="Views\Message\" />
-    <Folder Include="Views\Service\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
