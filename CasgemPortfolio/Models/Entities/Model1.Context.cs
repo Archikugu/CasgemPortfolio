@@ -28,5 +28,10 @@ namespace CasgemPortfolio.Models.Entities
         public DbSet<TblFeature> TblFeature { get; set; }
         public DbSet<TblMessage> TblMessage { get; set; }
         public DbSet<TblService> TblService { get; set; }
+        public DbSet<TblReference> TblReference { get; set; }
+        public DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public DbSet<TblDepartment> TblDepartment { get; set; }
+        public DbSet<TblEmployee> TblEmployee { get; set; }
+        public DbSet<TblResume> TblResume { get; set; }
     }
 }
