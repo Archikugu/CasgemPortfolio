@@ -131,6 +131,7 @@
     <Compile Include="Controllers\MessageController.cs" />
     <Compile Include="Controllers\ReferenceController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
+    <Compile Include="Controllers\StatisticController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -396,6 +397,7 @@
     <Content Include="Views\Service\AddService.cshtml" />
     <Content Include="Views\Service\UpdateService.cshtml" />
     <Content Include="Views\Reference\Index.cshtml" />
+    <Content Include="Views\Statistic\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
