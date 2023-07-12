@@ -7,10 +7,9 @@
 Author: W3layouts
 Author URL: http://w3layouts.com
 -->
+
 <!doctype html>
 <html lang="en">
-
-
 @Html.Action("PartialHead", "Portfolio")
 
 <body>
@@ -30,7 +29,7 @@ Author URL: http://w3layouts.com
         </div>
     </section>
     <!-- contact breadcrumb -->
-    <!-- contact block -->
+    <!-- contact block -->W
     <!-- contact1 -->
     <section class="w3l-contact-1 py-5">
         <div class="contacts-9 py-lg-5 py-md-4">
@@ -80,9 +79,18 @@ Author URL: http://w3layouts.com
                             <textarea name="Content" class="form-control" id="w3lMessage" placeholder="Mesajınızı Yazınız"
                                       required=""></textarea>
                             <div class="text-right">
-                                <button type="submit" class="btn btn-primary btn-style mt-4">Mesajı Gönder</button>
+                                <button type="submit" class="btn btn-primary btn-style mt-4" data-toggle="modal" data-target="Modal1">Mesajı Gönder</button>
                             </div>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="Modal1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Mesaj Başarılı Şekilde Gönderildi.</h2>
                     </div>
                 </div>
             </div>
@@ -98,7 +106,8 @@ Author URL: http://w3layouts.com
     @Html.Action("PartialFooter", "Portfolio")
     <!-- //Footer -->
     <!-- all js scripts and files here -->
-    @Html.Partial("PartialScripts")
+    @Html.Action("PartialScripts")
 </body>
+
 
 </html>
