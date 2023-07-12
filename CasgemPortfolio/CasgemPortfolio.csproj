@@ -129,6 +129,7 @@
     <Compile Include="Controllers\FeatureController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MessageController.cs" />
+    <Compile Include="Controllers\PortfolioController.cs" />
     <Compile Include="Controllers\ReferenceController.cs" />
     <Compile Include="Controllers\ServiceController.cs" />
     <Compile Include="Controllers\StatisticController.cs" />
@@ -398,6 +399,13 @@
     <Content Include="Views\Service\UpdateService.cshtml" />
     <Content Include="Views\Reference\Index.cshtml" />
     <Content Include="Views\Statistic\Index.cshtml" />
+    <Content Include="Views\Portfolio\Index.cshtml" />
+    <Content Include="Views\Portfolio\PartialHead.cshtml" />
+    <Content Include="Views\Portfolio\PartialNavbar.cshtml" />
+    <Content Include="Views\Portfolio\PartialFeature.cshtml" />
+    <Content Include="Views\Portfolio\PartialMyResume.cshtml" />
+    <Content Include="Views\Portfolio\PartialStatistic.cshtml" />
+    <Content Include="Views\Portfolio\PartialFooter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
