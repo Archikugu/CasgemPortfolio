@@ -44,7 +44,15 @@ namespace CasgemPortfolio.Controllers
 
             return PartialView();
         }
+        public PartialViewResult PartialTestimonials()
+        {
+            return PartialView();
+        }
         public PartialViewResult PartialFooter()
+        {
+            return PartialView();
+        }
+        public PartialViewResult PartialScripts()
         {
             return PartialView();
         }
