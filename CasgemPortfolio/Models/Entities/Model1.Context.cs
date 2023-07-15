@@ -33,5 +33,9 @@ namespace CasgemPortfolio.Models.Entities
         public DbSet<TblDepartment> TblDepartment { get; set; }
         public DbSet<TblEmployee> TblEmployee { get; set; }
         public DbSet<TblResume> TblResume { get; set; }
+        public DbSet<TblSkill> TblSkill { get; set; }
+        public DbSet<TblWhoAmI> TblWhoAmI { get; set; }
+        public DbSet<TblTestimonial> TblTestimonial { get; set; }
+        public DbSet<TblProject> TblProject { get; set; }
     }
 }

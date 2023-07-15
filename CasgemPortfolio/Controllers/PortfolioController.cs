@@ -30,9 +30,26 @@ namespace CasgemPortfolio.Controllers
 
             return PartialView();
         }
+        public PartialViewResult PartialWhoIAm()
+        {
+            ViewBag.title = db.TblWhoAmI.Select(x => x.Title).FirstOrDefault();
+            ViewBag.description = db.TblWhoAmI.Select(x => x.Description).FirstOrDefault();
+            return PartialView();
+        }
+        public ActionResult Download()
+        {
+            ViewBag.cv = db.TblWhoAmI.Select(x => x.CvLink).FirstOrDefault();
+            string filePath = Server.MapPath("~/Templates/" + ViewBag.cv);
+            return File(filePath, "application/pdf", ViewBag.cv);
+        }
         public PartialViewResult PartialMyResume()
         {
             var values = db.TblResume.ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult PartialService()
+        {
+            var values = db.TblService.ToList();
             return PartialView(values);
         }
         public PartialViewResult PartialStatistic()
@@ -41,10 +58,14 @@ namespace CasgemPortfolio.Controllers
             ViewBag.totalMessage = db.TblMessage.Count();
             ViewBag.totalThanksMessage = db.TblMessage.Where(x => x.MessageSubject == "Teşekkür").Count();
             ViewBag.happyCustomer = 12;
-
             return PartialView();
         }
         public PartialViewResult PartialTestimonials()
+        {
+            var values = db.TblTestimonial.ToList();
+            return PartialView(values);
+        }
+        public PartialViewResult PartialVideo()
         {
             return PartialView();
         }
@@ -54,6 +75,8 @@ namespace CasgemPortfolio.Controllers
         }
         public PartialViewResult PartialScripts()
         {
+            var textArray = db.TblSkill.Select(x => x.SkillName).ToArray();
+            ViewBag.skillArray = textArray;
             return PartialView();
         }
     }
