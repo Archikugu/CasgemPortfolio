@@ -429,6 +429,7 @@
     <Content Include="Views\Reference\AddReference.cshtml" />
     <Content Include="Views\Reference\UpdateReference.cshtml" />
     <Content Include="Views\Reference\PartialStyle.cshtml" />
+    <Content Include="Templates\CV-GokhanGOKCv.pdf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
