@@ -277,6 +277,13 @@
     <Content Include="Templates\alexander-starter\contact.html" />
     <Content Include="Templates\alexander-starter\index.html" />
     <Content Include="Templates\alexander-starter\starter-license-W3Layouts.txt" />
+    <Content Include="Templates\ProjectImages\1.png" />
+    <Content Include="Templates\ProjectImages\2.png" />
+    <Content Include="Templates\ProjectImages\3.png" />
+    <Content Include="Templates\ProjectImages\4.png" />
+    <Content Include="Templates\ProjectImages\5.png" />
+    <Content Include="Templates\ProjectImages\6.png" />
+    <Content Include="Templates\ProjectImages\7.png" />
     <Content Include="Templates\sidebar-01\css\bootstrap.min.css" />
     <Content Include="Templates\sidebar-01\css\bootstrap\mixins\_border-radius.css" />
     <Content Include="Templates\sidebar-01\css\bootstrap\mixins\_screen-reader.css" />
