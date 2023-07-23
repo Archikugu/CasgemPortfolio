@@ -7,6 +7,7 @@
 <h2>Referans Güncelleme  Sayfası</h2>
 
 <form method="post">
+    @Html.HiddenFor(x => x.ReferenceID)
     <label>Referans Adı</label>
     @Html.TextBoxFor(x => x.ReferenceName, new { @class = "form-control" })
     <br />
